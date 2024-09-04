@@ -65,6 +65,17 @@ a:focus {
 }
 
 
+#btn-change {
+    padding: 0 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 4rem;
+    color: #f8f9fa;
+}
+
+
 /**********************************/
 /****** Loader & Back to Top ******/
 /**********************************/
@@ -523,6 +534,124 @@ a:focus {
 }
 
 
+.causes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.causes-container .causes-item {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .causes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/********************************/
+/*******Personal Style*******/
+/********************************/
+
+.partner-button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 28px;
+    grid-gap: 32px;
+    
+}
+
+@media (max-width: 767.98px) {
+    .partner-button {
+        grid-template-columns: 1fr;
+        padding: 48px;
+    }
+
+}
+
+
+.partner-button #donate-change {
+    background-color: #4a4c70;;
+    
+}
+
+.partner-button #partner-change {
+    background-color: #20212B;
+    
+}
+
+.partner-button #volunteer-change {
+    background-color: #999999;
+    
+}
+
+.partner-button #volunteer-change {
+    background-color: #999999;
+    color: white;
+    
+}
+
+
+
+#donate-change, #partner-change, #volunteer-change, #advocate-change {
+    font-weight: 700;
+}
+
+.support-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.support-hold {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 32px;
+
+}
+
+@media (max-width: 991.98px) {
+    .support-hold {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+ }
+
+ 
+@media (max-width: 575.98px) {
+    .support-hold {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.support-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.impact-cards {
+    display: flex;
+    gap: 32px;
+}
+
+
+.impact-card {
+    background-color: #f5efef;
+}
+
+
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
@@ -677,6 +806,7 @@ a:focus {
 
 .about .about-tab {
     width: 100%;
+    text-align: justify;
 }
 
 .about .about-tab .nav.nav-pills .nav-link {
@@ -703,6 +833,8 @@ a:focus {
 .about .about-tab .tab-content .container {
     padding: 0;
 }
+
+
 
 @media (max-width: 991.98px) {
     .about .section-header {
@@ -865,6 +997,8 @@ a:focus {
     border: 1px solid #ffffff;
     box-shadow: inset 0 0 0 30px #ffffff;
 }
+
+
 
 
 
@@ -1044,8 +1178,8 @@ a:focus {
 }
 
 .facts .facts-text h3.facts-dollar::after {
-    content: "\f155";
-    right: -18px;
+    content: "M\20A6";
+    right: -50px;
 }
 
 .facts .facts-text p {
@@ -1054,6 +1188,8 @@ a:focus {
     font-weight: 600;
     margin: 0;
 }
+
+
 
 
 /*******************************/
